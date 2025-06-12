@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shatteredarchive:item/in_the_inbetween_music_disc"
+  }
+}

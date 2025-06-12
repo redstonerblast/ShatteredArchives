@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "tally.shattered_archive.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ActiveTargetGoalMixin",
+    "FreezeTopLayerMixin",
+    "ServerWorldMixin",
+    "ShatteredFoliagePlacerInvoker",
+    "ShatteredTrunkPlacerInvoker",
+    "SpreadableBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "RenderLayerMixin",
+    "WorldRendererMixin"
+  ]
+}

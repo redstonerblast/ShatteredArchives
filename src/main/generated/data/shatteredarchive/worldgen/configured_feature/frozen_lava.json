@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 7,
+      "min_inclusive": 4
+    },
+    "state": {
+      "Name": "minecraft:obsidian"
+    },
+    "target": {
+      "Name": "minecraft:lava",
+      "Properties": {
+        "level": "0"
+      }
+    }
+  }
+}

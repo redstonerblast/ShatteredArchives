@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "shatteredarchive:block/smooth_ink_sandstone_slab"
+    },
+    "type=double": {
+      "model": "shatteredarchive:block/smooth_ink_sandstone"
+    },
+    "type=top": {
+      "model": "shatteredarchive:block/smooth_ink_sandstone_slab_top"
+    }
+  }
+}

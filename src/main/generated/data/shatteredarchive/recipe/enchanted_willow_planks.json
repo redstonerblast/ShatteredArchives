@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "shatteredarchive:enchanted_willow_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "shatteredarchive:enchanted_willow_planks"
+  }
+}

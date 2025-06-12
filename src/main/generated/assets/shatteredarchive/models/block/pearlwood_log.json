@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "shatteredarchive:block/pearlwood_log_top",
+    "side": "shatteredarchive:block/pearlwood_log"
+  }
+}

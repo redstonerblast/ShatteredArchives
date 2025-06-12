@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "description": {
+    "translate": "item.shatteredarchive.night_terrors_music_disc.desc"
+  },
+  "length_in_seconds": 141.36,
+  "sound_event": "shatteredarchive:night_terrors"
+}

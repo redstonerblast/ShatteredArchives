@@ -1,0 +1,8 @@
+{
+  "comparator_output": 4,
+  "description": {
+    "translate": "item.shatteredarchive.amber_leaf_music_disc.desc"
+  },
+  "length_in_seconds": 184.211,
+  "sound_event": "shatteredarchive:amber_leaf"
+}

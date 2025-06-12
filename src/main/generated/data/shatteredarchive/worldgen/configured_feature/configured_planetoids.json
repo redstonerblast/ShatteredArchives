@@ -1,0 +1,673 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "shatteredarchive:small_ice_stack",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "shatteredarchive:small_ice_stack_flipped",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:snow_block"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:packed_ice"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:calcite"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:snow_block"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:packed_ice"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:calcite"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:snow_block"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_cactus",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_dead_bush",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:sandstone"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:bone_block",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:smooth_sandstone"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:sandstone"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:bone_block",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:sandstone"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:sand"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_grass_jungle",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:jungle_tree_no_vine",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:bamboo_no_podzol",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:vines",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:dirt"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:rooted_dirt"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:coarse_dirt"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:cobblestone"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:andesite"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:stone"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:mushroom_island_vegetation",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_brown_mushroom",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_red_mushroom",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:dirt"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:rooted_dirt"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:coarse_dirt"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:dirt"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:rooted_dirt"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:coarse_dirt"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:mycelium",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:crimson_forest_vegetation",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_crimson_roots",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:weeping_vines",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:blackstone"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:soul_soil"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:netherrack"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:blackstone"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:soul_soil"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:netherrack"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:crimson_nylium"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:chorus_plant",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:end_stone"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:end_stone_bricks"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:end_stone"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:end_stone"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:end_stone_bricks"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:end_stone"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:end_stone"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "shatteredarchive:planetoid_feature",
+          "config": {
+            "features": [
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:trees_taiga",
+                  "placement": []
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": "minecraft:patch_taiga_grass",
+                  "placement": []
+                }
+              }
+            ],
+            "higher_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:dirt"
+              },
+              "high_chance": 0.3,
+              "high_states": [
+                {
+                  "Name": "minecraft:rooted_dirt"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:coarse_dirt"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "lower_mat": {
+              "type": "minecraft:noise_threshold_provider",
+              "default_state": {
+                "Name": "minecraft:dirt"
+              },
+              "high_chance": 0.7,
+              "high_states": [
+                {
+                  "Name": "minecraft:rooted_dirt"
+                }
+              ],
+              "low_states": [
+                {
+                  "Name": "minecraft:coarse_dirt"
+                }
+              ],
+              "noise": {
+                "amplitudes": [
+                  1.0
+                ],
+                "firstOctave": 0
+              },
+              "scale": 2.0,
+              "seed": 2048304793,
+              "threshold": 0.3
+            },
+            "top_mat": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:podzol",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

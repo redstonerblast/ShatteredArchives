@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.shatteredarchive.anomalous_child_music_disc.desc"
+  },
+  "length_in_seconds": 176.44,
+  "sound_event": "shatteredarchive:anomalous_child"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "shatteredarchive:block/ink_sandstone"
+  }
+}

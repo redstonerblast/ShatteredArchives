@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "shatteredarchive:block/aurora_block"
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "shatteredarchive:the_zone",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "shatteredarchive:fairy_pond",
+  "size": 1,
+  "max_distance_from_center": 100,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "use_expansion_hack": false,
+  "start_height": {
+    "absolute": 0
+  },
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:allay",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  }
+}

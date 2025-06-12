@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "shatteredarchive:block/moondrop_open"
+    },
+    "lit=false": {
+      "model": "shatteredarchive:block/moondrop_closed"
+    }
+  }
+}

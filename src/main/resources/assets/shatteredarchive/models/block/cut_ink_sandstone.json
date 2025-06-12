@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "shatteredarchive:block/ink_sandstone_top",
+    "side": "shatteredarchive:block/cut_ink_sandstone"
+  }
+}

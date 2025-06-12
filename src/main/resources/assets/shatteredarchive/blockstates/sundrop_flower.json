@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "shatteredarchive:block/sundrop_open"
+    },
+    "lit=false": {
+      "model": "shatteredarchive:block/sundrop_closed"
+    }
+  }
+}

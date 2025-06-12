@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredarchive:abyss_decor",
+      "weight": 36
+    },
+    {
+      "structure": "shatteredarchive:abyss_bunker",
+      "weight": 3
+    },
+    {
+      "structure": "shatteredarchive:abyss_bunker_large",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 2,
+    "separation": 1,
+    "salt": 1646207470
+  }
+}

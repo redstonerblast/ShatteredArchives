@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "shatteredarchive:fairy_pond",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 100,
+    "separation": 60,
+    "salt": 1646207470
+  }
+}

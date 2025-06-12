@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.shatteredarchive.the_core_music_disc.desc"
+  },
+  "length_in_seconds": 219.436,
+  "sound_event": "shatteredarchive:the_core"
+}

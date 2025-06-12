@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "shatteredarchive:block/enchanted_willow_planks",
+    "side": "shatteredarchive:block/enchanted_willow_planks",
+    "top": "shatteredarchive:block/enchanted_willow_planks"
+  }
+}

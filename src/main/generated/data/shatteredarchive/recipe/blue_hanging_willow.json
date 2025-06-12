@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "drooping_leaves",
+  "key": {
+    "#": {
+      "item": "shatteredarchive:blue_enchanted_willow_leaves"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 2,
+    "id": "shatteredarchive:blue_hanging_willow"
+  }
+}

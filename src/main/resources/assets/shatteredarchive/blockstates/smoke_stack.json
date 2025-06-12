@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "shatteredarchive:block/smoke_stack",
+      "x": 90
+    },
+    "facing=east": {
+      "model": "shatteredarchive:block/smoke_stack",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shatteredarchive:block/smoke_stack"
+    },
+    "facing=south": {
+      "model": "shatteredarchive:block/smoke_stack",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "shatteredarchive:block/smoke_stack",
+      "x": 270
+    },
+    "facing=west": {
+      "model": "shatteredarchive:block/smoke_stack",
+      "y": 270
+    }
+  }
+}

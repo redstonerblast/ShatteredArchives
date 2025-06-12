@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "shatteredarchive:block/pearlwood_sapling"
+  }
+}

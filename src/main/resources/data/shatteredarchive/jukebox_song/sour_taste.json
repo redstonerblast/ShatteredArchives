@@ -1,0 +1,8 @@
+{
+  "comparator_output": 3,
+  "description": {
+    "translate": "item.shatteredarchive.sour_taste_music_disc.desc"
+  },
+  "length_in_seconds": 130.267,
+  "sound_event": "shatteredarchive:sour_taste"
+}

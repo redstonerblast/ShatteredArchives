@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:the_core_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:in_the_inbetween_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:mythical_worlds_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:stardust_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:insomnia_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:glimmering_hope_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:aurora_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:anomalous_child_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:rift_music_disc"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

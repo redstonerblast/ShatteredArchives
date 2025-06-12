@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "shatteredarchive:block/ink_sandstone_bottom",
+    "side": "shatteredarchive:block/ink_sandstone",
+    "top": "shatteredarchive:block/ink_sandstone_top"
+  }
+}

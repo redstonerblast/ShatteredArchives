@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enchanted_willow_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredarchive:enchanted_willow_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "shatteredarchive:hanging_willow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enchanted_willow_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "shatteredarchive:hanging_willow"
+    ]
+  }
+}

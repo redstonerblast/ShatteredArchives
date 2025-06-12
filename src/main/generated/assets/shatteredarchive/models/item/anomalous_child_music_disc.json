@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shatteredarchive:item/anomalous_child_music_disc"
+  }
+}

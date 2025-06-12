@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": {
+    "translate": "item.shatteredarchive.aurora_music_disc.desc"
+  },
+  "length_in_seconds": 147.75,
+  "sound_event": "shatteredarchive:aurora"
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "item.shatteredarchive.silly_note_music_disc.desc"
+  },
+  "length_in_seconds": 153.56,
+  "sound_event": "shatteredarchive:silly_note"
+}

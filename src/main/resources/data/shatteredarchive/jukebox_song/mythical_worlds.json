@@ -1,0 +1,8 @@
+{
+  "comparator_output": 8,
+  "description": {
+    "translate": "item.shatteredarchive.mythical_worlds_music_disc.desc"
+  },
+  "length_in_seconds": 228.875,
+  "sound_event": "shatteredarchive:mythical_worlds"
+}

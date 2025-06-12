@@ -1,0 +1,8 @@
+{
+  "comparator_output": 3,
+  "description": {
+    "translate": "item.shatteredarchive.grove_music_disc.desc"
+  },
+  "length_in_seconds": 99.96,
+  "sound_event": "shatteredarchive:grove"
+}

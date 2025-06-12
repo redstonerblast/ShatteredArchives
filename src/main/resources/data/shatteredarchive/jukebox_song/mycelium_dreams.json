@@ -1,0 +1,8 @@
+{
+  "comparator_output": 2,
+  "description": {
+    "translate": "item.shatteredarchive.mycelium_dreams_music_disc.desc"
+  },
+  "length_in_seconds": 134.641,
+  "sound_event": "shatteredarchive:mycelium_dreams"
+}

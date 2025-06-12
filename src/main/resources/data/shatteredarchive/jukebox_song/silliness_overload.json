@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.shatteredarchive.silliness_overload_music_disc.desc"
+  },
+  "length_in_seconds": 147.0,
+  "sound_event": "shatteredarchive:silliness_overload"
+}

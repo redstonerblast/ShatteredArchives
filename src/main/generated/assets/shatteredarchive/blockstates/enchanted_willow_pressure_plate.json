@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "shatteredarchive:block/enchanted_willow_pressure_plate"
+    },
+    "powered=true": {
+      "model": "shatteredarchive:block/enchanted_willow_pressure_plate_down"
+    }
+  }
+}

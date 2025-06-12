@@ -1,0 +1,10 @@
+{
+  "comparator_output": 4,
+  "description": [
+    {
+      "translate": "item.shatteredarchive.omen_music_disc.desc"
+    }
+  ],
+  "length_in_seconds": 152.24,
+  "sound_event": "shatteredarchive:omen"
+}

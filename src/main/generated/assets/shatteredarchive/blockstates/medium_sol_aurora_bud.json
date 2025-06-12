@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud"
+    },
+    "facing=west": {
+      "model": "shatteredarchive:block/medium_sol_aurora_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

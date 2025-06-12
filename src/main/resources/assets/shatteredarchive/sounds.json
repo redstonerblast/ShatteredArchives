@@ -1,0 +1,226 @@
+{
+  "lemonade": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:lemonade",
+        "stream": true
+      }
+    ]
+  },
+  "the_warrior": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:the_warrior",
+        "stream": true
+      }
+    ]
+  },
+  "mythical_worlds": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:mythical_worlds",
+        "stream": true
+      }
+    ]
+  },
+  "the_core": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:the_core",
+        "stream": true
+      }
+    ]
+  },
+  "insomnia": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:insomnia",
+        "stream": true
+      }
+    ]
+  },
+  "amber_leaf": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:amber_leaf",
+        "stream": true
+      }
+    ]
+  },
+  "embers": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:embers",
+        "stream": true
+      }
+    ]
+  },
+  "night_terrors": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:night_terrors",
+        "stream": true
+      }
+    ]
+  },
+  "bubbles_and_pearls": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:bubbles_and_pearls",
+        "stream": true
+      }
+    ]
+  },
+  "in_the_inbetween": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:in_the_inbetween",
+        "stream": true
+      }
+    ]
+  },
+  "resin_requiem": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:resin_requiem",
+        "stream": true
+      }
+    ]
+  },
+  "sector_0": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:sector_0",
+        "stream": true
+      }
+    ]
+  },
+  "stardust": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:stardust",
+        "stream": true
+      }
+    ]
+  },
+  "anomalous_child": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:anomalous_child",
+        "stream": true
+      }
+    ]
+  },
+  "aurora": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:aurora",
+        "stream": true
+      }
+    ]
+  },
+  "crow": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:crow",
+        "stream": true
+      }
+    ]
+  },
+  "decay": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:decay",
+        "stream": true
+      }
+    ]
+  },
+  "flow": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:flow",
+        "stream": true
+      }
+    ]
+  },
+  "glimmering_hope": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:glimmering_hope",
+        "stream": true
+      }
+    ]
+  },
+  "grove": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:grove",
+        "stream": true
+      }
+    ]
+  },
+  "mycelium_dreams": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:mycelium_dreams",
+        "stream": true
+      }
+    ]
+  },
+  "omen": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:omen",
+        "stream": true
+      }
+    ]
+  },
+  "rift": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:rift",
+        "stream": true
+      }
+    ]
+  },
+  "silliness_overload": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:silliness_overload",
+        "stream": true
+      }
+    ]
+  },
+  "silly_note": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:silly_note",
+        "stream": true
+      }
+    ]
+  },
+  "sour_taste": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:sour_taste",
+        "stream": true
+      }
+    ]
+  },
+  "tideborn": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:tideborn",
+        "stream": true
+      }
+    ]
+  },
+  "infestation": {
+    "sounds": [
+      {
+        "name": "shatteredarchive:infestation",
+        "stream": true
+      }
+    ]
+  }
+}

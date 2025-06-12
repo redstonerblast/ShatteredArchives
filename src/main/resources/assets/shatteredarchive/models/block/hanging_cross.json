@@ -1,0 +1,6 @@
+{
+  "parent": "shatteredarchive:block/cross",
+  "textures": {
+    "cross": "#texture"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 4,
+  "description": {
+    "translate": "item.shatteredarchive.stardust_music_disc.desc"
+  },
+  "length_in_seconds": 123.72,
+  "sound_event": "shatteredarchive:stardust"
+}

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 5,
+  "description": {
+    "translate": "item.shatteredarchive.resin_requiem_music_disc.desc"
+  },
+  "length_in_seconds": 240.0,
+  "sound_event": "shatteredarchive:resin_requiem"
+}

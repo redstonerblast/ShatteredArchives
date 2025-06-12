@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.shatteredarchive.sector_0_music_disc.desc"
+  },
+  "length_in_seconds": 172.76,
+  "sound_event": "shatteredarchive:sector_0"
+}

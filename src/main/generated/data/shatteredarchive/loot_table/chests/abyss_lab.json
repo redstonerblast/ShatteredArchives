@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:sector_0_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:silliness_overload_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:silly_note_music_disc"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

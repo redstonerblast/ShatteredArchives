@@ -1,0 +1,8 @@
+{
+  "comparator_output": 11,
+  "description": {
+    "translate": "item.shatteredarchive.crow_music_disc.desc"
+  },
+  "length_in_seconds": 188.4,
+  "sound_event": "shatteredarchive:crow"
+}

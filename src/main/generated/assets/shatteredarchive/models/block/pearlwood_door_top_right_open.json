@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "shatteredarchive:block/pearlwood_door_bottom",
+    "top": "shatteredarchive:block/pearlwood_door_top"
+  }
+}
