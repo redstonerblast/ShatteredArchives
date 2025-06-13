@@ -20,6 +20,7 @@ import tally.shattered_archive.sounds.ShatteredSounds;
 import tally.shattered_archive.util.LootTableMods;
 import tally.shattered_archive.world.ShatteredFeatures;
 import tally.shattered_archive.world.biome.BiolithApi;
+import tally.shattered_archive.world.decorators.ShatteredDecorators;
 import tally.shattered_archive.world.foliage.ShatteredFoliagePlacers;
 import tally.shattered_archive.world.trunk.ShatteredTrunkPlacers;
 
@@ -52,6 +53,7 @@ public class ShatteredArchive implements ModInitializer {
 
 		ShatteredTrunkPlacers.register();
 		ShatteredFoliagePlacers.register();
+		ShatteredDecorators.register();
 		CommandHandler.register();
 		LootTableMods.modifyLootTables();
 		SpawnRestriction.register(EntityType.BREEZE, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);

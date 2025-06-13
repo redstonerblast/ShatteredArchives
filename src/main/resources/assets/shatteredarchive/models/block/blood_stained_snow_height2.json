@@ -1,6 +1,6 @@
 {   "parent": "block/thin_block",
     "textures": {
-        "particle": "block/snow",
+        "particle": "shatteredarchive:block/blood_stained_snow",
         "texture": "shatteredarchive:block/blood_stained_snow"
     },
     "elements": [

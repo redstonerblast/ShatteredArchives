@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-12T22:22:09.6122995	ShatteredArchive/Block Loot Tables
+// 1.21.1	2025-06-13T17:59:50.9771247	ShatteredArchive/Block Loot Tables
 7d64ac9afb8299b3b0da1522cc3fa0e5bfc613d7 data\shatteredarchive\loot_table\blocks\brown_hallow_leaves.json
 ee268806a1f0a28e2cf037b7a384a60cbae952e7 data\shatteredarchive\loot_table\blocks\pearlwood_fence.json
 ff7d40ff71a7be7e9567100f69e06304d7312a89 data\shatteredarchive\loot_table\blocks\magenta_hallow_leaves.json
@@ -67,8 +67,8 @@ cd97e3be244db2a6cb697c85a38823ba4e9434b7 data\shatteredarchive\loot_table\blocks
 58dc9d9e34f144ff2478f46bd5eb67d60c15a010 data\shatteredarchive\loot_table\blocks\purple_hallow_leaves.json
 a601fa246016361de00cba573bc9653a8fc0bc52 data\shatteredarchive\loot_table\blocks\pearlwood_stairs.json
 93552180c5e4434072fa67c110eb0572f59229bb data\shatteredarchive\loot_table\blocks\pearlwood_door.json
-e1cab44f47a2a4f83a03b07f0b29375815628fac data\shatteredarchive\loot_table\blocks\small_sol_aurora_bud.json
 f9f9f720ef2d89eab4fa6e634a2c2e806763fc29 data\shatteredarchive\loot_table\blocks\blue_enchanted_willow_leaves.json
+e1cab44f47a2a4f83a03b07f0b29375815628fac data\shatteredarchive\loot_table\blocks\small_sol_aurora_bud.json
 64669303de1c490abb42f748baeb8c4245e429bd data\shatteredarchive\loot_table\blocks\light_gray_hallow_leaves.json
 ed3e15128b9b2110833a03dd3a4094e05c72e8e9 data\shatteredarchive\loot_table\blocks\enchanted_willow_sapling.json
 295bb77f4fc5e458aa1872039d94bd13f7c23928 data\shatteredarchive\loot_table\blocks\potted_moondrop.json

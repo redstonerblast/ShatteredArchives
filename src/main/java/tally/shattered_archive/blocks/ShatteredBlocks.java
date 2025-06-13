@@ -39,6 +39,13 @@ import static net.minecraft.block.Blocks.createLeavesBlock;
 
 public class ShatteredBlocks {
 
+    public static final Block COCKATRICE_OF_THE_WOODS = registerNo(
+            "cockatrice_of_the_woods",
+            new WallDependentBlock(
+                    AbstractBlock.Settings.create().mapColor(MapColor.CYAN).strength(2.0F, 3.0F).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).luminance(lightLevel(8))
+            )
+    );
+
     public static final Block DWARF_LAVENDER = register(
             "dwarf_lavender",
             (Block)new FlowerBlock(StatusEffects.REGENERATION, 0.9f, AbstractBlock.Settings.create().mapColor(MapColor.PALE_PURPLE).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY))

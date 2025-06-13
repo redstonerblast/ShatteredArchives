@@ -6,7 +6,21 @@
         "feature": {
           "type": "minecraft:tree",
           "config": {
-            "decorators": [],
+            "decorators": [
+              {
+                "type": "minecraft:trunk_attached",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "shatteredarchive:cockatrice_of_the_woods",
+                    "Properties": {
+                      "facing": "north"
+                    }
+                  }
+                },
+                "probability": 0.4
+              }
+            ],
             "dirt_provider": {
               "type": "minecraft:simple_state_provider",
               "state": {
@@ -91,7 +105,21 @@
         "feature": {
           "type": "minecraft:tree",
           "config": {
-            "decorators": [],
+            "decorators": [
+              {
+                "type": "minecraft:trunk_attached",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "shatteredarchive:cockatrice_of_the_woods",
+                    "Properties": {
+                      "facing": "north"
+                    }
+                  }
+                },
+                "probability": 0.4
+              }
+            ],
             "dirt_provider": {
               "type": "minecraft:simple_state_provider",
               "state": {

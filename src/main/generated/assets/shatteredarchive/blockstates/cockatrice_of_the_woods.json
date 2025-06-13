@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "shatteredarchive:block/cockatrice_of_the_woods",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shatteredarchive:block/cockatrice_of_the_woods"
+    },
+    "facing=south": {
+      "model": "shatteredarchive:block/cockatrice_of_the_woods",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "shatteredarchive:block/cockatrice_of_the_woods",
+      "y": 270
+    }
+  }
+}

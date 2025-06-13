@@ -22,6 +22,8 @@ public class ShatteredModels extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ShatteredBlocks.COCKATRICE_OF_THE_WOODS);
+
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.MANABLOOM, ShatteredBlocks.POTTED_MANABLOOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.FIDDLE_FERN, ShatteredBlocks.POTTED_FIDDLE_FERN, BlockStateModelGenerator.TintType.TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.SPIDER_LILY, ShatteredBlocks.POTTED_SPIDER_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -49,8 +51,8 @@ public class ShatteredModels extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.ENCHANTED_WILLOW_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_LEAVES);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.GLOWING_ENCHANTED_WILLOW_LEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.GLOWING_BLUE_ENCHANTED_WILLOW_LEAVES);
+        blockStateModelGenerator.registerSimpleState(ShatteredBlocks.GLOWING_ENCHANTED_WILLOW_LEAVES);
+        blockStateModelGenerator.registerSimpleState(ShatteredBlocks.GLOWING_BLUE_ENCHANTED_WILLOW_LEAVES);
 
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.RED_HALLOW_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.ORANGE_HALLOW_LEAVES);

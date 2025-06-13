@@ -17,6 +17,7 @@ import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.util.math.VerticalSurfaceType;
+import net.minecraft.util.math.floatprovider.FloatProvider;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -32,12 +33,15 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.minecraft.world.gen.stateprovider.*;
 import net.minecraft.world.gen.treedecorator.AttachedToLeavesTreeDecorator;
+import net.minecraft.world.gen.treedecorator.CocoaBeansTreeDecorator;
+import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.minecraft.world.gen.trunk.TrunkPlacer;
 import tally.shattered_archive.ShatteredArchive;
 import tally.shattered_archive.blocks.ShatteredBlocks;
+import tally.shattered_archive.world.decorators.TrunkDecorator;
 import tally.shattered_archive.world.features.PlanetoidFeature;
 import tally.shattered_archive.world.foliage.AuroraFoliagePlacer;
 import tally.shattered_archive.world.foliage.DroopingFoliagePlacer;
@@ -495,7 +499,15 @@ public class ShatteredConfiguredFeatures {
                                     BlockStateProvider.of(ShatteredBlocks.ENCHANTED_WILLOW_LEAVES),
                                     new DroopingFoliagePlacer(UniformIntProvider.create(4,6), ConstantIntProvider.create(1)),
 
-                                    new TwoLayersFeatureSize(1, 0, 6)).build()
+                                    new TwoLayersFeatureSize(1, 0, 6))
+                                        .decorators(
+                                                List.of(
+                                                        new TrunkDecorator(
+                                                                0.4F,
+                                                                BlockStateProvider.of(ShatteredBlocks.COCKATRICE_OF_THE_WOODS)
+                                                        )
+                                                )
+                                        ).build()
                         ),
                         PlacedFeatures.createEntry(
                                 Feature.TREE,
@@ -506,7 +518,14 @@ public class ShatteredConfiguredFeatures {
                                         BlockStateProvider.of(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_LEAVES),
                                         new DroopingFoliagePlacer(UniformIntProvider.create(4,6), ConstantIntProvider.create(1)),
 
-                                        new TwoLayersFeatureSize(1, 0, 6)).build()
+                                        new TwoLayersFeatureSize(1, 0, 6)).decorators(
+                                        List.of(
+                                                new TrunkDecorator(
+                                                        0.4F,
+                                                        BlockStateProvider.of(ShatteredBlocks.COCKATRICE_OF_THE_WOODS)
+                                                )
+                                        )
+                                ).build()
                         )
                 )
         ));

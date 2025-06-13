@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "shatteredarchive:block/glowing_blue_enchanted_willow_leaves_full",
+    "side": "shatteredarchive:block/glowing_blue_enchanted_willow_leaves",
+    "top": "shatteredarchive:block/blue_enchanted_willow_leaves"
+  }
+}

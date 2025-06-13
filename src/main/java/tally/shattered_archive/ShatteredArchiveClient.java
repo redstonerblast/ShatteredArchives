@@ -71,6 +71,8 @@ public class ShatteredArchiveClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(ShatteredParticles.BLUE_WILLOW_LEAVES, (FabricSpriteProvider spriteProvider) -> (parameters, world, x, y, z, velocityX, velocityY, velocityZ) -> new WillowParticle(world, x, y, z, spriteProvider));
         ParticleFactoryRegistry.getInstance().register(ShatteredParticles.SMOKE_PARTICLE_SIMPLE, SmokeParticle.SmokeParticleFactory::new);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.COCKATRICE_OF_THE_WOODS, RenderLayer.getCutoutMipped());
+
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_DROOPING_LEAVES, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.ENCHANTED_WILLOW_DROOPING_LEAVES, RenderLayer.getCutoutMipped());
 

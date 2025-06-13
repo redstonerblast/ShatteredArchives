@@ -48,7 +48,7 @@ public class DroopingFoliagePlacer extends FoliagePlacer {
                 for (int l = 0; l <= pRadius - 1 + i; ++l) {
                     double pow = Math.pow((Math.pow(j, 2) + Math.pow(k, 2) + Math.pow(l, 2)), 0.5);
                     if (pow <= pRadius) {
-                        if (pow >= (pRadius - 1.5)) {
+                        if (pow >= (pRadius - 1.5) && l == 0) {
                             this.startTendril(world, placer, random, config, blockpos, j, l - 1, k, (float) (pow - (pRadius - 1.5)));
                         }
                         blockpos$mutableblockpos.set(blockpos);
@@ -69,8 +69,8 @@ public class DroopingFoliagePlacer extends FoliagePlacer {
             tryPlaceLeafWater(world, placer, random, config, blockpos$mutableblockpos.add(j, offset - n, k));
         }
 
+        tryPlaceGlowingWater(world, placer, random, config, blockpos$mutableblockpos.add(j, offset - i, k));
         if (random.nextFloat() < 0.3) {
-            tryPlaceGlowingWater(world, placer, random, config, blockpos$mutableblockpos.add(j, offset - i, k));
             tryPlaceHangingWater(world, placer, random, config, blockpos$mutableblockpos.add(j, offset - 1 - i, k));
         }
     }

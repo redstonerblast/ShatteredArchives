@@ -6,6 +6,10 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.component.type.FoodComponents;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -82,6 +86,23 @@ public class ShatteredItems {
             new Item(new Item.Settings().jukeboxPlayable(ShatteredSounds.TIDEBORN_KEY).maxCount(1)));
     public static final Item INFESTATION_MUSIC_DISC = registerItem("infestation_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ShatteredSounds.INFESTATION_KEY).maxCount(1)));
+
+    public static final FoodComponent COCKATRICE_COMPONENT = new FoodComponent.Builder()
+            .snack()
+            .nutrition(3)
+            .saturationModifier(2f)
+            // The duration is in ticks, 20 ticks = 1 second
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 6 * 20, 1), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 6 * 20, 1), 0.5f)
+            .build();
+
+    public static final Item COCKATRICE_OF_THE_WOODS_ITEM = registerItem("cockatrice_of_the_woods", (Item)new AliasedBlockItem(ShatteredBlocks.COCKATRICE_OF_THE_WOODS, new Item.Settings().food(COCKATRICE_COMPONENT)));
 
     public static final Item PEARLWOOD_SIGN = registerItem("pearlwood_sign",
             new SignItem(new Item.Settings().maxCount(16), ShatteredBlocks.PEARLWOOD_SIGN, ShatteredBlocks.PEARLWOOD_WALL_SIGN));
