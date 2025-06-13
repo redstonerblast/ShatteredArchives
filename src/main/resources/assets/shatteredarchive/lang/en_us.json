@@ -107,8 +107,8 @@
   "block.shatteredarchive.enchanted_willow_planks": "Enchanted Willow Planks",
   "block.shatteredarchive.enchanted_willow_log": "Enchanted Willow Log",
   "block.shatteredarchive.enchanted_willow_wood": "Enchanted Willow Wood",
-  "block.shatteredarchive.stripped_enchanted willow_log": "Stripped Enchanted Willow Log",
-  "block.shatteredarchive.stripped_enchanted willow_wood": "Stripped Enchanted Willow Wood",
+  "block.shatteredarchive.stripped_enchanted_willow_log": "Stripped Enchanted Willow Log",
+  "block.shatteredarchive.stripped_enchanted_willow_wood": "Stripped Enchanted Willow Wood",
   "block.shatteredarchive.enchanted_willow_slab": "Enchanted Willow Slab",
   "block.shatteredarchive.enchanted_willow_stairs": "Enchanted Willow Stairs",
   "block.shatteredarchive.enchanted_willow_trapdoor": "Enchanted Willow Trapdoor",
@@ -148,5 +148,8 @@
   "block.shatteredarchive.brown_hallow_leaves": "Brown Hallow Leaves",
 
   "item.shatteredarchive.pearlwood_boat": "Pearlwood Boat",
-  "item.shatteredarchive.pearlwood_chest_boat": "Pearlwood Chest Boat"
+  "item.shatteredarchive.pearlwood_chest_boat": "Pearlwood Chest Boat",
+
+  "item.shatteredarchive.enchanted_willow_boat": "Enchanted Willow Boat",
+  "item.shatteredarchive.enchanted_willow_chest_boat": "Enchanted Willow Chest Boat"
 }

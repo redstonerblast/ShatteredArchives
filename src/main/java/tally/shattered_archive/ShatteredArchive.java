@@ -18,10 +18,8 @@ import tally.shattered_archive.items.ShatteredItems;
 import tally.shattered_archive.particles.ShatteredParticles;
 import tally.shattered_archive.sounds.ShatteredSounds;
 import tally.shattered_archive.util.LootTableMods;
-import tally.shattered_archive.world.ShatteredConfiguredFeatures;
 import tally.shattered_archive.world.ShatteredFeatures;
 import tally.shattered_archive.world.biome.BiolithApi;
-import tally.shattered_archive.world.biome.ShatteredBiomes;
 import tally.shattered_archive.world.foliage.ShatteredFoliagePlacers;
 import tally.shattered_archive.world.trunk.ShatteredTrunkPlacers;
 
