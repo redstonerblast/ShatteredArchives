@@ -42,6 +42,8 @@ public class ShatteredLootTables extends FabricBlockLootTableProvider {
         addDrop(ShatteredBlocks.SMALL_SOL_AURORA_BUD);
 
         addDrop(ShatteredBlocks.ECLIPSA_AURORA_BLOCK);
+        
+        addDrop(ShatteredBlocks.COCKATRICE_OF_THE_WOODS, ShatteredItems.COCKATRICE_OF_THE_WOODS_ITEM);
 
         addDrop(ShatteredBlocks.INK_SANDSTONE);
         addDrop(ShatteredBlocks.INK_SANDSTONE_SLAB);

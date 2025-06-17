@@ -42,7 +42,7 @@ public class ShatteredBlocks {
     public static final Block COCKATRICE_OF_THE_WOODS = registerNo(
             "cockatrice_of_the_woods",
             new WallDependentBlock(
-                    AbstractBlock.Settings.create().mapColor(MapColor.CYAN).strength(2.0F, 3.0F).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).luminance(lightLevel(8))
+                    AbstractBlock.Settings.create().mapColor(MapColor.CYAN).strength(2.0F, 3.0F).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY).luminance(lightLevel(11))
             )
     );
 
@@ -58,7 +58,7 @@ public class ShatteredBlocks {
 
     public static final Block MANABLOOM = register(
             "manabloom",
-            (Block)new FlowerBlock(StatusEffects.INVISIBILITY, 3.0f, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY))
+            (Block)new FlowerBlock(StatusEffects.INVISIBILITY, 3.0f, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).luminance(lightLevel(9)))
     );
 
     public static final Block FIDDLE_FERN = register(
