@@ -3,7 +3,6 @@ package tally.shattered_archive.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.state.property.Properties;
@@ -25,9 +24,14 @@ public class ShatteredModels extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ShatteredBlocks.COCKATRICE_OF_THE_WOODS);
 
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.MANABLOOM, ShatteredBlocks.POTTED_MANABLOOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM, ShatteredBlocks.POTTED_ENCHANTED_PINK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM, ShatteredBlocks.POTTED_ENCHANTED_BLUE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.FIDDLE_FERN, ShatteredBlocks.POTTED_FIDDLE_FERN, BlockStateModelGenerator.TintType.TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.SPIDER_LILY, ShatteredBlocks.POTTED_SPIDER_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ShatteredBlocks.DWARF_LAVENDER, ShatteredBlocks.POTTED_DWARF_LAVENDER, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerMushroomBlock(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM_BLOCK);
+        blockStateModelGenerator.registerMushroomBlock(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM_BLOCK);
 
         registerAuroraCluster(blockStateModelGenerator, ShatteredBlocks.SOL_AURORA_CLUSTER, "aurora_cluster");
         registerAuroraCluster(blockStateModelGenerator, ShatteredBlocks.LARGE_SOL_AURORA_BUD, "large_aurora_bud");

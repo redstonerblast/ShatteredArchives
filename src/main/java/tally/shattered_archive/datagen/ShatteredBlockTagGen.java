@@ -3,7 +3,6 @@ package tally.shattered_archive.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -101,6 +100,10 @@ public class ShatteredBlockTagGen extends FabricTagProvider<Block> {
                 .add(ShatteredBlocks.STRIPPED_ENCHANTED_WILLOW_LOG)
                 .add(ShatteredBlocks.STRIPPED_ENCHANTED_WILLOW_WOOD);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM_BLOCK)
+                .add(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM_BLOCK);
+
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .addTag(PEARLWOOD_LOGS)
                 .addTag(ENCHANTED_WILLOW_LOGS);
@@ -167,7 +170,9 @@ public class ShatteredBlockTagGen extends FabricTagProvider<Block> {
                 .add(ShatteredBlocks.POTTED_SUNDROP_FLOWER)
                 .add(ShatteredBlocks.POTTED_MOONDROP_FLOWER)
                 .add(ShatteredBlocks.POTTED_SPIDER_LILY)
-                .add(ShatteredBlocks.POTTED_DWARF_LAVENDER);
+                .add(ShatteredBlocks.POTTED_DWARF_LAVENDER)
+                .add(ShatteredBlocks.POTTED_ENCHANTED_BLUE_MUSHROOM)
+                .add(ShatteredBlocks.POTTED_ENCHANTED_PINK_MUSHROOM);
 
         getOrCreateTagBuilder(DROOPING_WILLOW)
                 .add(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_DROOPING_LEAVES)

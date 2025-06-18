@@ -2,22 +2,17 @@ package tally.shattered_archive.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.AlternativeEntry;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
-import net.minecraft.loot.function.SetPotionLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.potion.Potions;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryWrapper;
 import tally.shattered_archive.blocks.ShatteredBlocks;
@@ -99,9 +94,14 @@ public class ShatteredLootTables extends FabricBlockLootTableProvider {
         addDrop(ShatteredBlocks.MANABLOOM);
         addDrop(ShatteredBlocks.SPIDER_LILY);
         addDrop(ShatteredBlocks.DWARF_LAVENDER);
+        addDrop(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM);
+        addDrop(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM_BLOCK, mushroomBlockDrops(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM_BLOCK, ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM));
 
-        dropsWithShears(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_DROOPING_LEAVES);
-        dropsWithShears(ShatteredBlocks.ENCHANTED_WILLOW_DROOPING_LEAVES);
+        addDrop(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM);
+        addDrop(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM_BLOCK, mushroomBlockDrops(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM_BLOCK, ShatteredBlocks.ENCHANTED_PINK_MUSHROOM));
+
+        addDrop(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_DROOPING_LEAVES, dropsWithShears(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_DROOPING_LEAVES));
+        addDrop(ShatteredBlocks.ENCHANTED_WILLOW_DROOPING_LEAVES, dropsWithShears(ShatteredBlocks.ENCHANTED_WILLOW_DROOPING_LEAVES));
         
         addDropWithSilkTouch(ShatteredBlocks.BLOOD_ICE);
 
@@ -133,6 +133,7 @@ public class ShatteredLootTables extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ShatteredBlocks.POTTED_PEARLWOOD_SAPLING);
         addPottedPlantDrops(ShatteredBlocks.POTTED_ENCHANTED_WILLOW_SAPLING);
         addPottedPlantDrops(ShatteredBlocks.POTTED_MANABLOOM);
+        addPottedPlantDrops(ShatteredBlocks.POTTED_ENCHANTED_BLUE_MUSHROOM);
         addPottedPlantDrops(ShatteredBlocks.POTTED_FIDDLE_FERN);
         addPottedPlantDrops(ShatteredBlocks.POTTED_SPIDER_LILY);
         addPottedPlantDrops(ShatteredBlocks.POTTED_DWARF_LAVENDER);

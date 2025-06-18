@@ -75,15 +75,16 @@
     [
       "minecraft:glow_lichen",
       "minecraft:forest_rock",
-      "shatteredarchive:willow_tree",
-      "minecraft:trees_cherry",
-      "minecraft:lush_caves_vegetation",
       "shatteredarchive:zone_flowers",
+      "shatteredarchive:willow_tree",
       "minecraft:flower_flower_forest",
       "minecraft:patch_large_fern",
       "minecraft:patch_grass_taiga",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
+      "shatteredarchive:huge_pink_mush",
+      "shatteredarchive:huge_blue_mush",
+      "shatteredarchive:brown_mush",
+      "shatteredarchive:pink_mush",
+      "shatteredarchive:blue_mush",
       "shatteredarchive:purple_mist"
     ],
     [

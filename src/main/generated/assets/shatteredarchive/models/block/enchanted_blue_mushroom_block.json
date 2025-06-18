@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_single_face",
+  "textures": {
+    "texture": "shatteredarchive:block/enchanted_blue_mushroom_block"
+  }
+}

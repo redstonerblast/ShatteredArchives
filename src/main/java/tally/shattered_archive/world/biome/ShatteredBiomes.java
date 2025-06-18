@@ -135,20 +135,21 @@ public class ShatteredBiomes {
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, MiscPlacedFeatures.FOREST_ROCK);
 
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.WILLOW_TREE);
-
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_CHERRY);
-
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, UndergroundPlacedFeatures.LUSH_CAVES_VEGETATION);
-
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.ZONE_FLOWERS);
 
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.WILLOW_TREE);
+
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FLOWER_FLOWER_FOREST);
+
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_LARGE_FERN);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_GRASS_TAIGA);
 
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.BROWN_MUSHROOM_NORMAL);
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.RED_MUSHROOM_NORMAL);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.HUGE_PINK_MUSH);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.HUGE_BLUE_MUSH);
+
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.BROWN_MUSH);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.PINK_MUSH);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.BLUE_MUSH);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ShatteredPlacedFeatures.PURPLE_MIST);
 

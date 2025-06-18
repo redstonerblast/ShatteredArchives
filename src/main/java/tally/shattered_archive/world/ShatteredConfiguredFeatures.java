@@ -6,39 +6,23 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
-import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3i;
-import net.minecraft.util.math.VerticalSurfaceType;
-import net.minecraft.util.math.floatprovider.FloatProvider;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.util.math.intprovider.WeightedListIntProvider;
 import net.minecraft.util.math.noise.DoublePerlinNoiseSampler;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
-import net.minecraft.world.gen.noise.NoiseParametersKeys;
-import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.minecraft.world.gen.stateprovider.*;
 import net.minecraft.world.gen.treedecorator.AttachedToLeavesTreeDecorator;
-import net.minecraft.world.gen.treedecorator.CocoaBeansTreeDecorator;
-import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
-import net.minecraft.world.gen.trunk.TrunkPlacer;
 import tally.shattered_archive.ShatteredArchive;
 import tally.shattered_archive.blocks.ShatteredBlocks;
 import tally.shattered_archive.world.decorators.TrunkDecorator;
@@ -47,7 +31,6 @@ import tally.shattered_archive.world.foliage.AuroraFoliagePlacer;
 import tally.shattered_archive.world.foliage.DroopingFoliagePlacer;
 import tally.shattered_archive.world.trunk.AuroraTrunkPlacer;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -68,9 +51,21 @@ public class ShatteredConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> HOLLOW_TREE_NAT = registerKey("hollow_nat_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SPIDER_LILLIES = registerKey("spider_lillies");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLOOD_FREEZE = registerKey("blood_freeze");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HUGE_ENCHANTED_BLUE_MUSHROOM = registerKey("huge_enchanted_blue_mushroom");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HUGE_ENCHANTED_PINK_MUSHROOM = registerKey("huge_enchanted_pink_mushroom");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_MUSH_PATCH = registerKey("enchanted_mush_patch");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_MUSH_PATCH = registerKey("enchanted_pink_mush_patch");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
+        register(context, BLUE_MUSH_PATCH, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM))));
+
+        register(context, PINK_MUSH_PATCH, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM))));
+
+        register(context, HUGE_ENCHANTED_BLUE_MUSHROOM, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfig(BlockStateProvider.of(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM_BLOCK), BlockStateProvider.of(Blocks.MUSHROOM_STEM), 2));
+
+        register(context, HUGE_ENCHANTED_PINK_MUSHROOM, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfig(BlockStateProvider.of(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM_BLOCK), BlockStateProvider.of(Blocks.MUSHROOM_STEM), 2));
 
         register(context, SPIDER_LILLIES, Feature.FLOWER, new RandomPatchFeatureConfig(16, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ShatteredBlocks.SPIDER_LILY)))));
 
@@ -499,7 +494,7 @@ public class ShatteredConfiguredFeatures {
                                     BlockStateProvider.of(ShatteredBlocks.ENCHANTED_WILLOW_LEAVES),
                                     new DroopingFoliagePlacer(UniformIntProvider.create(4,6), ConstantIntProvider.create(1)),
 
-                                    new TwoLayersFeatureSize(1, 0, 6))
+                                    new TwoLayersFeatureSize(1, 0, 2))
                                         .decorators(
                                                 List.of(
                                                         new TrunkDecorator(
@@ -518,7 +513,7 @@ public class ShatteredConfiguredFeatures {
                                         BlockStateProvider.of(ShatteredBlocks.BLUE_ENCHANTED_WILLOW_LEAVES),
                                         new DroopingFoliagePlacer(UniformIntProvider.create(4,6), ConstantIntProvider.create(1)),
 
-                                        new TwoLayersFeatureSize(1, 0, 6)).decorators(
+                                        new TwoLayersFeatureSize(1, 0, 2)).decorators(
                                         List.of(
                                                 new TrunkDecorator(
                                                         0.4F,
@@ -634,7 +629,7 @@ public class ShatteredConfiguredFeatures {
 
         register(context, MOONDROP, Feature.FLOWER,
                 new RandomPatchFeatureConfig(
-                        96,
+                        12,
                         6,
                         2,
                         PlacedFeatures.createEntry(
@@ -643,7 +638,7 @@ public class ShatteredConfiguredFeatures {
                                         new NoiseBlockStateProvider(
                                                 2345L,
                                                 new DoublePerlinNoiseSampler.NoiseParameters(0, 1.0),
-                                                0.020833334F,
+                                                0.005F,
                                                 List.of(
                                                         ShatteredBlocks.MOONDROP_FLOWER.getDefaultState(),
                                                         ShatteredBlocks.MANABLOOM.getDefaultState(),

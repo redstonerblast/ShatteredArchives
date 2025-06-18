@@ -1,25 +1,20 @@
 package tally.shattered_archive.world;
 
-import net.minecraft.block.Blocks;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.VerticalSurfaceType;
-import net.minecraft.util.math.intprovider.ClampedIntProvider;
-import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import org.jetbrains.annotations.Nullable;
 import tally.shattered_archive.ShatteredArchive;
 import tally.shattered_archive.blocks.ShatteredBlocks;
 
@@ -40,6 +35,13 @@ public class ShatteredPlacedFeatures {
     public static final RegistryKey<PlacedFeature> GRASS_HALLOW = registerKey("grass_hallow");
     public static final RegistryKey<PlacedFeature> FLOWERS_HALLOW = registerKey("flowers_hallow");
     public static final RegistryKey<PlacedFeature> SPIDER_LILLIES = registerKey("spider_lillies_placed");
+    public static final RegistryKey<PlacedFeature> RED_MUSH = registerKey("red_mush");
+    public static final RegistryKey<PlacedFeature> BROWN_MUSH = registerKey("brown_mush");
+    public static final RegistryKey<PlacedFeature> BLUE_MUSH = registerKey("blue_mush");
+    public static final RegistryKey<PlacedFeature> HUGE_BLUE_MUSH = registerKey("huge_blue_mush");
+    public static final RegistryKey<PlacedFeature> PINK_MUSH = registerKey("pink_mush");
+    public static final RegistryKey<PlacedFeature> HUGE_PINK_MUSH = registerKey("huge_pink_mush");
+
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -105,7 +107,7 @@ public class ShatteredPlacedFeatures {
                 context,
                 WILLOW_TREE,
                 configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.ENCHANTED_WILLOW_KEY),
-                CountPlacementModifier.of(90),
+                CountPlacementModifier.of(11),
                 SquarePlacementModifier.of(),
                 SurfaceWaterDepthFilterPlacementModifier.of(2),
                 PlacedFeatures.OCEAN_FLOOR_HEIGHTMAP,
@@ -123,12 +125,63 @@ public class ShatteredPlacedFeatures {
                 context,
                 ZONE_FLOWERS,
                 configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.MOONDROP),
-                RarityFilterPlacementModifier.of(4),
+                RarityFilterPlacementModifier.of(2),
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
-                CountPlacementModifier.of(ClampedIntProvider.create(UniformIntProvider.create(-1, 3), 0, 3)),
+                CountPlacementModifier.of(UniformIntProvider.create(0, 3)),
                 BiomePlacementModifier.of()
         );
+
+        register(
+                context,
+                RED_MUSH,
+                configuredFeatures.getOrThrow(VegetationConfiguredFeatures.PATCH_RED_MUSHROOM),
+                mushroomModifiers(0, CountPlacementModifier.of(4))
+        );
+        register(
+                context,
+                BROWN_MUSH,
+                configuredFeatures.getOrThrow(VegetationConfiguredFeatures.PATCH_BROWN_MUSHROOM),
+                mushroomModifiers(0, CountPlacementModifier.of(4))
+        );
+        register(
+                context,
+                BLUE_MUSH,
+                configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.BLUE_MUSH_PATCH),
+                mushroomModifiers(0, CountPlacementModifier.of(4))
+        );
+        register(
+                context,
+                HUGE_BLUE_MUSH,
+                configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.HUGE_ENCHANTED_BLUE_MUSHROOM),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()
+        );
+        register(
+                context,
+                PINK_MUSH,
+                configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.PINK_MUSH_PATCH),
+                mushroomModifiers(0, CountPlacementModifier.of(4))
+        );
+        register(
+                context,
+                HUGE_PINK_MUSH,
+                configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.HUGE_ENCHANTED_PINK_MUSHROOM),
+                SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()
+        );
+    }
+
+    private static List<PlacementModifier> mushroomModifiers(int chance, @Nullable PlacementModifier modifier) {
+        ImmutableList.Builder builder = ImmutableList.builder();
+        if (modifier != null) {
+            builder.add(modifier);
+        }
+        if (chance != 0) {
+            builder.add(RarityFilterPlacementModifier.of(chance));
+        }
+        builder.add(SquarePlacementModifier.of());
+        builder.add(PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP);
+        builder.add(BiomePlacementModifier.of());
+        return builder.build();
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

@@ -4,7 +4,6 @@ import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.BlockSetTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.minecraft.block.*;
@@ -24,18 +23,14 @@ import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 import tally.shattered_archive.ShatteredArchive;
 import tally.shattered_archive.blocks.custom.*;
 import tally.shattered_archive.world.ShatteredConfiguredFeatures;
 import tally.shattered_archive.world.ShatteredSaplingGenerators;
 
-import javax.swing.text.html.BlockView;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.ToIntFunction;
-
-import static net.minecraft.block.Blocks.createLeavesBlock;
 
 public class ShatteredBlocks {
 
@@ -65,6 +60,24 @@ public class ShatteredBlocks {
             "fiddle_fern",
             (Block)new ShortPlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY))
     );
+
+    public static final Block ENCHANTED_BLUE_MUSHROOM_BLOCK = register("enchanted_blue_mushroom_block", new MushroomBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASS).strength(0.2f).sounds(BlockSoundGroup.WOOD).luminance(state -> 6).burnable()));
+
+    public static final Block ENCHANTED_BLUE_MUSHROOM = register(
+            "enchanted_blue_mushroom",
+            (Block)new MushroomPlantBlock(ShatteredConfiguredFeatures.HUGE_ENCHANTED_BLUE_MUSHROOM, AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).luminance(state -> 4).postProcess(Blocks::always).pistonBehavior(PistonBehavior.DESTROY))
+    );
+
+    public static final Block ENCHANTED_PINK_MUSHROOM_BLOCK = register("enchanted_pink_mushroom_block", new MushroomBlock(AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(0.2f).sounds(BlockSoundGroup.WOOD).luminance(state -> 6).burnable()));
+
+    public static final Block ENCHANTED_PINK_MUSHROOM = register(
+            "enchanted_pink_mushroom",
+            (Block)new MushroomPlantBlock(ShatteredConfiguredFeatures.HUGE_ENCHANTED_PINK_MUSHROOM, AbstractBlock.Settings.create().mapColor(MapColor.PINK).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).luminance(state -> 4).postProcess(Blocks::always).pistonBehavior(PistonBehavior.DESTROY))
+    );
+
+    public static final Block POTTED_ENCHANTED_BLUE_MUSHROOM = Registry.register(Registries.BLOCK, Identifier.of(ShatteredArchive.MOD_ID, "potted_enchanted_blue_mushroom"), createFlowerPotBlock(ENCHANTED_BLUE_MUSHROOM));
+
+    public static final Block POTTED_ENCHANTED_PINK_MUSHROOM = Registry.register(Registries.BLOCK, Identifier.of(ShatteredArchive.MOD_ID, "potted_enchanted_pink_mushroom"), createFlowerPotBlock(ENCHANTED_PINK_MUSHROOM));
 
     public static final Block POTTED_MANABLOOM = Registry.register(Registries.BLOCK, Identifier.of(ShatteredArchive.MOD_ID, "potted_manabloom"), createFlowerPotBlock(MANABLOOM));
 

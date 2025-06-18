@@ -96,6 +96,8 @@ public class ShatteredArchiveClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.MANABLOOM, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.SPIDER_LILY, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.DWARF_LAVENDER, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.ENCHANTED_PINK_MUSHROOM, RenderLayer.getCutoutMipped());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_MOONDROP_FLOWER, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_PEARLWOOD_SAPLING, RenderLayer.getCutoutMipped());
@@ -105,6 +107,8 @@ public class ShatteredArchiveClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_MANABLOOM, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_DWARF_LAVENDER, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_SPIDER_LILY, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_ENCHANTED_BLUE_MUSHROOM, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.POTTED_ENCHANTED_PINK_MUSHROOM, RenderLayer.getCutoutMipped());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.ENCHANTED_WILLOW_SAPLING, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(ShatteredBlocks.ENCHANTED_WILLOW_DOOR, RenderLayer.getCutoutMipped());

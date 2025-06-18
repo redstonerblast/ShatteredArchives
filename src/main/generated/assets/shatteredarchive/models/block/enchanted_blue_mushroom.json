@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "shatteredarchive:block/enchanted_blue_mushroom"
+  }
+}

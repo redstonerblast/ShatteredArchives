@@ -13,7 +13,7 @@
               ],
               "firstOctave": 0
             },
-            "scale": 0.020833334,
+            "scale": 0.005,
             "seed": 2345,
             "states": [
               {
@@ -45,7 +45,7 @@
         }
       ]
     },
-    "tries": 96,
+    "tries": 12,
     "xz_spread": 6,
     "y_spread": 2
   }
