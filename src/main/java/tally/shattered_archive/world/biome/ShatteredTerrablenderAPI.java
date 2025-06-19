@@ -11,7 +11,7 @@ import terrablender.api.TerraBlenderApi;
 public class ShatteredTerrablenderAPI implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized() {
-        Regions.register(new ShatteredOverworldRegion(Identifier.of(ShatteredArchive.MOD_ID, "overworld"), 2));
+        Regions.register(new ShatteredOverworldRegion(Identifier.of(ShatteredArchive.MOD_ID, "overworld"), 7));
 
         SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, ShatteredArchive.MOD_ID, ShatteredMaterialRules.makeRules());
     }
