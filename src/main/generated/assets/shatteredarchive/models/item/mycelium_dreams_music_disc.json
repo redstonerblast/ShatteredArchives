@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "shatteredarchive:item/mycelium_dreams_music_disc"
-  }
-}

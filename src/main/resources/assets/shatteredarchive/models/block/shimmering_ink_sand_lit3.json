@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "all": "shatteredarchive:block/shimmering_ink_sand_lit",
+    "all_emissive": "shatteredarchive:block/shimmering_ink_sand_lit_emissive",
+    "particle": "shatteredarchive:block/shimmering_ink_sand"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": { "texture": "#all", "emissive": "#all_emissive" },
+        "south": { "texture": "#all", "emissive": "#all_emissive" },
+        "east":  { "texture": "#all", "emissive": "#all_emissive" },
+        "west":  { "texture": "#all", "emissive": "#all_emissive" },
+        "up":    { "texture": "#all", "emissive": "#all_emissive" },
+        "down":  { "texture": "#all", "emissive": "#all_emissive" }
+      }
+    }
+  ]
+}

@@ -2,7 +2,6 @@ package tally.shattered_archive.world;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -10,7 +9,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.util.math.intprovider.WeightedListIntProvider;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
@@ -45,6 +43,7 @@ public class ShatteredPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PINK_MUSH = registerKey("pink_mush");
     public static final RegistryKey<PlacedFeature> HUGE_PINK_MUSH = registerKey("huge_pink_mush");
     public static final RegistryKey<PlacedFeature> ORE_ARCTICITE = registerKey("ore_arcticite");
+    public static final RegistryKey<PlacedFeature> SHIMMERING_INK_SAND = registerKey("shimmering_ink_sand");
 
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
@@ -52,6 +51,12 @@ public class ShatteredPlacedFeatures {
 
     private static List<PlacementModifier> modifiersWithCount(int count, PlacementModifier heightModifier) {
         return modifiers(CountPlacementModifier.of(count), heightModifier);
+    }
+    private static List<PlacementModifier> modifiersWithCountNonSquared(int count, PlacementModifier heightModifier) {
+        return List.of(CountPlacementModifier.of(count), heightModifier, BiomePlacementModifier.of());
+    }
+    private static List<PlacementModifier> modifiersWithRarityNonSquared(int chance, PlacementModifier heightModifier) {
+        return List.of(RarityFilterPlacementModifier.of(chance), heightModifier, BiomePlacementModifier.of());
     }
 
     private static List<PlacementModifier> modifiersWithRarity(int chance, PlacementModifier heightModifier) {
@@ -61,8 +66,13 @@ public class ShatteredPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, ORE_ARCTICITE, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.ORE_ARCTICITE), modifiersWithCount(14,
+        register(context, ORE_ARCTICITE, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.ORE_ARCTICITE), modifiersWithCount(1,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(200)) ));
+
+        register(context, SHIMMERING_INK_SAND, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.SHIMMERING_INK_SAND),
+                modifiersWithRarityNonSquared(7,
+                HeightmapPlacementModifier.of(Heightmap.Type.WORLD_SURFACE_WG) ));
+
 
         register(context, SPIDER_LILLIES, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.SPIDER_LILLIES), RarityFilterPlacementModifier.of(6), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 

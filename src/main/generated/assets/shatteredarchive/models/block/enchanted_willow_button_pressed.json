@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_pressed",
-  "textures": {
-    "texture": "shatteredarchive:block/enchanted_willow_planks"
-  }
-}

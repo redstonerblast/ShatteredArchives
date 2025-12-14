@@ -27,6 +27,33 @@
         "projection": "rigid",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "shatteredarchive:xandrite_tent_a",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "shatteredarchive:xandrite_tent_b",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "shatteredarchive:xandrite_tent_c",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
     }
   ]
 }

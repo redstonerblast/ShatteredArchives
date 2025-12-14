@@ -679,6 +679,9 @@ public class ShatteredBlocks {
     public static final Block ARCTICITE_ORE = register("arcticite_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE).sounds(BlockSoundGroup.STONE).requiresTool().strength(3.0f, 3.0f)));
 
+    public static final Block SHIMMERING_INK_SAND = register("shimmering_ink_sand",
+            new ShimerringInkSand(AbstractBlock.Settings.copy(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
+
     private static boolean always(BlockState blockState, net.minecraft.world.BlockView blockView, BlockPos blockPos) {
         return true;
     }

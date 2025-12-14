@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "shatteredarchive:block/enchanted_pink_mushroom"
-  }
-}

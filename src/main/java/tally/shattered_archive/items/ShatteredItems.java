@@ -157,6 +157,10 @@ public class ShatteredItems {
             itemGroup.add(ShatteredBlocks.INKED_XANDRITE_BLOCK);
             itemGroup.add(ShatteredBlocks.FROSTED_CALCITE);
             itemGroup.add(ShatteredBlocks.ARCTICITE_ORE);
+            itemGroup.add(ShatteredBlocks.SHIMMERING_INK_SAND);
+            itemGroup.add(ShatteredBlocks.BLOOD_ICE);
+            itemGroup.add(ShatteredBlocks.BLOOD_STAINED_SNOW);
+            itemGroup.add(ShatteredBlocks.BLOOD_STAINED_SNOW);
 
             itemGroup.add(ShatteredItems.MYTHICAL_WORLDS_MUSIC_DISC);
             itemGroup.add(ShatteredItems.AMBER_LEAF_MUSIC_DISC);

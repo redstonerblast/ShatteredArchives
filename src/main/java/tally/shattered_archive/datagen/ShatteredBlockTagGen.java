@@ -193,7 +193,16 @@ public class ShatteredBlockTagGen extends FabricTagProvider<Block> {
                 .add(ShatteredBlocks.ARCTICITE_ORE);
 
         getOrCreateTagBuilder(BlockTags.SCULK_REPLACEABLE)
-                .add(ShatteredBlocks.FROSTED_CALCITE);
+                .add(ShatteredBlocks.FROSTED_CALCITE)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.CAMEL_SAND_STEP_SOUND_BLOCKS)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.LUSH_GROUND_REPLACEABLE)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.AZALEA_GROWS_ON)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.SMELTS_TO_GLASS)
+                .add(ShatteredBlocks.INK_SAND);
 
         getOrCreateTagBuilder(BlockTags.DRIPSTONE_REPLACEABLE_BLOCKS)
                 .add(ShatteredBlocks.FROSTED_CALCITE);
@@ -201,13 +210,25 @@ public class ShatteredBlockTagGen extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.SCULK_REPLACEABLE_WORLD_GEN)
                 .add(ShatteredBlocks.FROSTED_CALCITE);
 
+
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ShatteredBlocks.INK_SAND)
                 .add(ShatteredBlocks.BLOOD_STAINED_SNOW_BLOCK)
-                .add(ShatteredBlocks.BLOOD_STAINED_SNOW);
+                .add(ShatteredBlocks.BLOOD_STAINED_SNOW)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
 
         getOrCreateTagBuilder(BlockTags.REPLACEABLE)
                 .add(ShatteredBlocks.BLOOD_STAINED_SNOW);
+
+        getOrCreateTagBuilder(BlockTags.DEAD_BUSH_MAY_PLACE_ON)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.ENDERMAN_HOLDABLE)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND)
+                        .add(ShatteredBlocks.INK_SAND);
+        getOrCreateTagBuilder(BlockTags.BAMBOO_PLANTABLE_ON)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
+        getOrCreateTagBuilder(BlockTags.AZALEA_ROOT_REPLACEABLE)
+                .add(ShatteredBlocks.SHIMMERING_INK_SAND);
 
         getOrCreateTagBuilder(BlockTags.SNOW_LAYER_CANNOT_SURVIVE_ON)
                 .add(ShatteredBlocks.BLOOD_ICE);

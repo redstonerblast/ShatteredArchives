@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "shatteredarchive:item/insomnia_music_disc"
-  }
-}

@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.feature.ConfiguredFeatures;
 import net.minecraft.world.gen.noise.NoiseParametersKeys;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 import tally.shattered_archive.blocks.ShatteredBlocks;
@@ -20,7 +21,6 @@ public class ShatteredMaterialRulesNether {
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
-
         MaterialRules.MaterialRule surfaceMatFrost = MaterialRules.sequence(
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH,
                         MaterialRules.sequence(

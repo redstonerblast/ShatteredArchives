@@ -9,6 +9,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import tally.shattered_archive.ShatteredArchive;
 import tally.shattered_archive.blocks.ShatteredBlocks;
+import tally.shattered_archive.blocks.ShimerringInkSand;
 import tally.shattered_archive.blocks.helpers.ModBlockProperties;
 import tally.shattered_archive.items.ShatteredItems;
 
@@ -80,6 +81,7 @@ public class ShatteredModels extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.INKED_XANDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.FROSTED_CALCITE);
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.ARCTICITE_ORE);
+        //blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.SHIMMERING_INK_SAND);
 
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.RED_HALLOW_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ShatteredBlocks.ORANGE_HALLOW_LEAVES);
@@ -157,6 +159,8 @@ public class ShatteredModels extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+
         Models.GENERATED.upload(ModelIds.getItemModelId(ShatteredBlocks.SOL_AURORA_CLUSTER.asItem()), TextureMap.layer0(Identifier.of("shatteredarchive:block/aurora_cluster")), itemModelGenerator.writer);
         Models.GENERATED.upload(ModelIds.getItemModelId(ShatteredBlocks.LARGE_SOL_AURORA_BUD.asItem()), TextureMap.layer0(Identifier.of("shatteredarchive:block/large_aurora_bud")), itemModelGenerator.writer);
         Models.GENERATED.upload(ModelIds.getItemModelId(ShatteredBlocks.MEDIUM_SOL_AURORA_BUD.asItem()), TextureMap.layer0(Identifier.of("shatteredarchive:block/medium_aurora_bud")), itemModelGenerator.writer);
