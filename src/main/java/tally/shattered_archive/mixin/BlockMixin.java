@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import tally.shattered_archive.datagen.ShatteredBlockTagGen;
+import tally.shattered_archive.datagen.ShatteredItemTagGen;
 import tally.shattered_archive.items.ShatteredItems;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public abstract class BlockMixin {
     ) {
         ItemStack tool = builder.get(LootContextParameters.TOOL);
 
-        if (tool == null || !tool.isOf(ShatteredItems.GLASS_CUTTER)) return;
+        if (tool == null || !tool.isIn(ShatteredItemTagGen.GLASS_SILKED)) return;
         if (!state.isIn(ShatteredBlockTagGen.GLASS)) return;
 
         Block block = (Block)(Object)this;

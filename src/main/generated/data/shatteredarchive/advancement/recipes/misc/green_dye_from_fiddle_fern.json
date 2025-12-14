@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:green_dye_from_fiddle_fern"
+        "recipe": "shatteredarchive:green_dye_from_fiddle_fern"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:green_dye_from_fiddle_fern"
+      "shatteredarchive:green_dye_from_fiddle_fern"
     ]
   }
 }
