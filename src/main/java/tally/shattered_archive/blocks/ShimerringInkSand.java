@@ -3,14 +3,13 @@ package tally.shattered_archive.blocks;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Box;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
@@ -26,11 +25,11 @@ public class ShimerringInkSand extends Block {
 
     public ShimerringInkSand(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)this.getDefaultState().with(LIT, false));
+        this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
     @Override
     protected void onBlockBreakStart(BlockState state, World world, BlockPos pos, PlayerEntity player) {
-        ShimerringInkSand.light(state, world, pos);
+        ShimerringInkSand.light(state, world, pos, 10);
         super.onBlockBreakStart(state, world, pos, player);
     }
 
@@ -50,18 +49,18 @@ public class ShimerringInkSand extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.bypassesSteppingEffects()) {
-            ShimerringInkSand.light(state, world, pos);
+            ShimerringInkSand.light(state, world, pos, 60);
         }
         super.onSteppedOn(world, pos, state, entity);
     }
 
-    private static void light(BlockState state, World world, BlockPos pos) {
+    private static void light(BlockState state, World world, BlockPos pos, int delay) {
         if (!state.get(LIT)) {
             BlockState litState = state.with(LIT, true);
             world.setBlockState(pos, litState, Block.NOTIFY_ALL);
 
             if (!world.isClient) {
-                world.scheduleBlockTick(pos, litState.getBlock(), 60);
+                world.scheduleBlockTick(pos, litState.getBlock(), delay);
             }
         }
     }
@@ -69,7 +68,14 @@ public class ShimerringInkSand extends Block {
 
     @Override
     protected void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        world.setBlockState(pos, (BlockState)state.with(LIT, false), Block.NOTIFY_ALL);
+        Box box = new Box(pos).expand(0.1, 0.5, 0.1);
+        List<LivingEntity> entities = world.getNonSpectatingEntities(LivingEntity.class, box);
+
+        if (!entities.isEmpty()){
+            world.scheduleBlockTick(pos, state.getBlock(), 60);
+        } else{
+            world.setBlockState(pos, state.with(LIT, false), Block.NOTIFY_ALL);
+        }
     }
 
     @Override
