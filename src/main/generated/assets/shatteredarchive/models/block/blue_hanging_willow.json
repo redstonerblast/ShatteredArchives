@@ -1,0 +1,6 @@
+{
+  "parent": "shatteredarchive:block/hanging_cross",
+  "textures": {
+    "texture": "shatteredarchive:block/blue_hanging_willow"
+  }
+}

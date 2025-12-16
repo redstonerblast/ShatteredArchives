@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "shatteredarchive:block/pearlwood_planks",
+    "side": "shatteredarchive:block/pearlwood_planks",
+    "top": "shatteredarchive:block/pearlwood_planks"
+  }
+}

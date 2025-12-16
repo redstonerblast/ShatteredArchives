@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:basalt"
+    },
+    "X": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
+    ]
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shatteredarchive:smoke_stack"
+  }
+}

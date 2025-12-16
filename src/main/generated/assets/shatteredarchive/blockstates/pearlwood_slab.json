@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "shatteredarchive:block/pearlwood_slab"
+    },
+    "type=double": {
+      "model": "shatteredarchive:block/pearlwood_planks"
+    },
+    "type=top": {
+      "model": "shatteredarchive:block/pearlwood_slab_top"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "get_cuter": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredarchive:glass_cuter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Cutting with Cuteness",
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "shatteredarchive:glass_cuter"
+    },
+    "title": "Get Cuter!"
+  },
+  "requirements": [
+    [
+      "get_cuter"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

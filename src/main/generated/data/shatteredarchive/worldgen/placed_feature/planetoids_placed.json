@@ -1,0 +1,31 @@
+{
+  "feature": "shatteredarchive:configured_planetoids",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "below_top": 100
+        },
+        "min_inclusive": {
+          "above_bottom": 150
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shatteredarchive:item/silliness_overload_music_disc"
+  }
+}

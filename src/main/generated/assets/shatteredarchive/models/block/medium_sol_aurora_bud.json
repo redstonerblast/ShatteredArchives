@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "shatteredarchive:block/medium_aurora_bud"
+  }
+}

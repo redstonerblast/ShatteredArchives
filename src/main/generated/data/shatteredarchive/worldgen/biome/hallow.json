@@ -1,0 +1,80 @@
+{
+  "carvers": {
+    "air": "minecraft:nether_cave"
+  },
+  "downfall": 0.0,
+  "effects": {
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "minecraft:ambient.nether_wastes.loop",
+    "fog_color": 65535,
+    "grass_color": 7402239,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.game"
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:glow"
+      },
+      "probability": 0.003
+    },
+    "sky_color": 65535,
+    "water_color": 4159204,
+    "water_fog_color": 4341314
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "shatteredarchive:glow_crystal_placed",
+      "shatteredarchive:hollow_tree_placed",
+      "shatteredarchive:grass_hallow",
+      "shatteredarchive:flowers_hallow"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:zombie_horse",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:vex",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 2.0
+}

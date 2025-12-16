@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "shatteredarchive:block/spider_lily"
+  }
+}

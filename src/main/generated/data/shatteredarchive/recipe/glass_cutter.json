@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "glass_cutter",
+  "key": {
+    "1": {
+      "item": "shatteredarchive:arcticite_shard"
+    },
+    "2": {
+      "item": "minecraft:iron_nugget"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  1",
+    " 2 ",
+    "3  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shatteredarchive:glass_cutter"
+  }
+}

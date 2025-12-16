@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "shatteredarchive:block/sol_aurora_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "shatteredarchive:block/sol_aurora_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shatteredarchive:block/sol_aurora_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "shatteredarchive:block/sol_aurora_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "shatteredarchive:block/sol_aurora_cluster"
+    },
+    "facing=west": {
+      "model": "shatteredarchive:block/sol_aurora_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

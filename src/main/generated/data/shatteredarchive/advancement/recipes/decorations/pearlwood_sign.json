@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pearlwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shatteredarchive:pearlwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "shatteredarchive:pearlwood_sign"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pearlwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "shatteredarchive:pearlwood_sign"
+    ]
+  }
+}

@@ -1,0 +1,1372 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:red_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:orange_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:yellow_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:lime_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:cyan_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:light_blue_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:blue_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:purple_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:magenta_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pink_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:black_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:gray_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:light_gray_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:white_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      },
+      {
+        "feature": {
+          "type": "minecraft:tree",
+          "config": {
+            "decorators": [
+              {
+                "type": "minecraft:attached_to_leaves",
+                "block_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:soul_lantern",
+                    "Properties": {
+                      "hanging": "true",
+                      "waterlogged": "false"
+                    }
+                  }
+                },
+                "directions": [
+                  "down"
+                ],
+                "exclusion_radius_xz": 1,
+                "exclusion_radius_y": 1,
+                "probability": 0.05,
+                "required_empty_blocks": 1
+              }
+            ],
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:grass_block",
+                "Properties": {
+                  "snowy": "false"
+                }
+              }
+            },
+            "foliage_placer": {
+              "type": "minecraft:spruce_foliage_placer",
+              "offset": 0,
+              "radius": 3,
+              "trunk_height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 5,
+                "min_inclusive": 3
+              }
+            },
+            "foliage_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:brown_hallow_leaves",
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
+              }
+            },
+            "force_dirt": false,
+            "ignore_vines": false,
+            "minimum_size": {
+              "type": "minecraft:two_layers_feature_size",
+              "limit": 2,
+              "lower_size": 0,
+              "upper_size": 2
+            },
+            "trunk_placer": {
+              "type": "minecraft:straight_trunk_placer",
+              "base_height": 6,
+              "height_rand_a": 0,
+              "height_rand_b": 2
+            },
+            "trunk_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "shatteredarchive:pearlwood_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "feature": "shatteredarchive:blood_freeze",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

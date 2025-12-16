@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "shatteredarchive:item/silly_note_music_disc"
+  }
+}

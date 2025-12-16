@@ -1,0 +1,31 @@
+{
+  "feature": "shatteredarchive:purple_mist",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "below_top": 100
+        },
+        "min_inclusive": {
+          "above_bottom": 120
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

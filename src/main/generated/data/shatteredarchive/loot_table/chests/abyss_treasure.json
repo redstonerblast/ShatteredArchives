@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:night_terrors_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:flow_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:tideborn_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:bubbles_and_pearls_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:decay_music_disc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shatteredarchive:omen_music_disc"
+        }
+      ],
+      "rolls": 2.0
+    }
+  ]
+}

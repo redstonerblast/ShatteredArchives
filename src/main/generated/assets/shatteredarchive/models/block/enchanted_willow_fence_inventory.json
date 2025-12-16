@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "shatteredarchive:block/enchanted_willow_planks"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "shatteredarchive:block/ink_sand"
+      },
+      {
+        "model": "shatteredarchive:block/ink_sand",
+        "y": 90
+      },
+      {
+        "model": "shatteredarchive:block/ink_sand",
+        "y": 180
+      },
+      {
+        "model": "shatteredarchive:block/ink_sand",
+        "y": 270
+      }
+    ]
+  }
+}
