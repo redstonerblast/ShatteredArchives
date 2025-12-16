@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 150,
+  "experience": 0.2,
+  "group": "defrosting",
+  "ingredient": {
+    "item": "shatteredarchive:frosted_calcite"
+  },
+  "result": {
+    "id": "minecraft:calcite"
+  }
+}
