@@ -22,7 +22,8 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 import tally.shattered_archive.world.ShatteredPlacedFeatures;
 
 public class HallowBiome {
-    public static final MultiNoiseUtil.NoiseHypercube NOISE_POINT = MultiNoiseUtil.createNoiseHypercube(0.10F, -0.11F, 0.0F, 0.0F, 0.0F, 0.00F, 0.02F);
+    public static final MultiNoiseUtil.NoiseHypercube NOISE_POINT =
+            MultiNoiseUtil.createNoiseHypercube(0.10F, -0.11F, 0.0F, 0.0F, 0.0F, 0.00F, 0.02F);
 
     public static Biome create(Registerable<Biome> registerable) {
         return new Biome.Builder()

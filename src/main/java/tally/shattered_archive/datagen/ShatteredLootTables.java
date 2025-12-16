@@ -96,6 +96,7 @@ public class ShatteredLootTables extends FabricBlockLootTableProvider {
         );
 
         addDrop(ShatteredBlocks.INKED_XANDRITE_BLOCK, drops(ShatteredBlocks.INKED_XANDRITE_BLOCK, ShatteredItems.INKED_XANDRITE));
+        addDrop(ShatteredBlocks.SHIMMERING_INK_SAND);
         addDrop(ShatteredBlocks.FROSTED_CALCITE);
 
         addDrop(ShatteredBlocks.PEARLWOOD_SAPLING);

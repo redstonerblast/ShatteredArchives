@@ -9,7 +9,6 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
-import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.Direction;
@@ -22,7 +21,6 @@ import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
-import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 import net.minecraft.world.gen.stateprovider.*;
 import net.minecraft.world.gen.treedecorator.AttachedToLeavesTreeDecorator;
 import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
@@ -61,17 +59,25 @@ public class ShatteredConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_MUSH_PATCH = registerKey("enchanted_mush_patch");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_MUSH_PATCH = registerKey("enchanted_pink_mush_patch");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_ARCTICITE = registerKey("ore_arcticite");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SHIMMERING_INK_SAND = registerKey("shimmering_ink_sand");
 
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+        RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
         List<OreFeatureConfig.Target> oreArcticiteTarget =
                 List.of(OreFeatureConfig.createTarget(new BlockMatchRuleTest(ShatteredBlocks.FROSTED_CALCITE),
                         ShatteredBlocks.ARCTICITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> shimmeringSandTarget =
+                List.of(OreFeatureConfig.createTarget(new BlockMatchRuleTest(ShatteredBlocks.INK_SAND),
+                        ShatteredBlocks.SHIMMERING_INK_SAND.getDefaultState()));
 
-        RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, ORE_ARCTICITE, Feature.ORE,
                 new OreFeatureConfig(oreArcticiteTarget, 5));
+
+        register(context, SHIMMERING_INK_SAND, Feature.ORE,
+                new OreFeatureConfig(shimmeringSandTarget, 40));
 
         register(context, BLUE_MUSH_PATCH, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ShatteredBlocks.ENCHANTED_BLUE_MUSHROOM))));
 

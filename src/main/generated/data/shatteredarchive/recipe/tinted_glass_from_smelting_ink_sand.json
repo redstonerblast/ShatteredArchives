@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 310,
+  "experience": 0.2,
+  "group": "glass",
+  "ingredient": {
+    "item": "shatteredarchive:ink_sand"
+  },
+  "result": {
+    "id": "minecraft:tinted_glass"
+  }
+}

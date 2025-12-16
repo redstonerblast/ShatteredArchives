@@ -3,13 +3,15 @@
 	"id": "shatteredarchive",
 	"version": "${version}",
 	"name": "ShatteredArchive",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The description was erased by The Fade...",
 	"authors": [
-		"Me!"
+		"TallyIsManyThings",
+		"MagnarIUK",
+		"ItzCrim"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.youtube.com/@ShatteredArchive",
+		"sources": "https://github.com/redstonerblast/ShatteredArchives/tree/master"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/shatteredarchive/icon.png",

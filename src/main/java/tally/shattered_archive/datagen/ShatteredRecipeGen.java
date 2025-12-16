@@ -58,6 +58,16 @@ public class ShatteredRecipeGen extends FabricRecipeProvider {
 
         FabricRecipeProvider.offerSmelting(
                 recipeExporter,
+                List.of(ShatteredBlocks.INK_SAND.asItem()),
+                RecipeCategory.BUILDING_BLOCKS,
+                Items.TINTED_GLASS,
+                0.2f,
+                310,
+                "glass"
+        );
+
+        FabricRecipeProvider.offerSmelting(
+                recipeExporter,
                 List.of(ShatteredBlocks.FROSTED_CALCITE.asItem()),
                 RecipeCategory.BUILDING_BLOCKS,
                 Items.CALCITE,

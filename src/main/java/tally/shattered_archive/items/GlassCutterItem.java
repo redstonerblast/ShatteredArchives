@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.ActionResult;
@@ -18,9 +19,12 @@ import net.minecraft.util.ClickType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 import tally.shattered_archive.datagen.ShatteredBlockTagGen;
+import tally.shattered_archive.world.biome.ShatteredBiomes;
 
 import java.util.List;
+import java.util.function.Predicate;
 
 public class GlassCutterItem extends Item {
     public GlassCutterItem(Settings settings) {
@@ -34,9 +38,17 @@ public class GlassCutterItem extends Item {
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         if(entity instanceof AxolotlEntity){
-            ItemStack newStack = stack.copyComponentsToNewStack(ShatteredItems.GLASS_CUTER, 1);
-            System.out.println(newStack);
-            user.getInventory().setStack(user.getInventory().selectedSlot, newStack);
+            World world = entity.getWorld();
+            BlockPos pos = entity.getBlockPos();
+
+            RegistryEntry<Biome> biomeRegistryEntry = world.getBiome(pos);
+
+            if (biomeRegistryEntry.matchesKey(ShatteredBiomes.THE_ZONE)){
+                ItemStack newStack = stack.copyComponentsToNewStack(ShatteredItems.GLASS_CUTER, 1);
+                System.out.println(newStack);
+                user.setStackInHand(hand, newStack);
+                return ActionResult.SUCCESS;
+            }
         }
         return super.useOnEntity(stack, user, entity, hand);
     }

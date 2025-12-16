@@ -13,6 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
+        "recipe": "shatteredarchive:calcite_from_smelting_frosted_calcite"
         "recipe": "minecraft:calcite_from_smelting_frosted_calcite"
       },
       "trigger": "minecraft:recipe_unlocked"
@@ -26,6 +27,7 @@
   ],
   "rewards": {
     "recipes": [
+      "shatteredarchive:calcite_from_smelting_frosted_calcite"
       "minecraft:calcite_from_smelting_frosted_calcite"
     ]
   }

@@ -209,7 +209,7 @@ public class ShatteredBiomes {
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-
+        biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_ORES, ShatteredPlacedFeatures.SHIMMERING_INK_SAND);
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
 

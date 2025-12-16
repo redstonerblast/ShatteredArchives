@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "shatteredarchive:block/shimmering_ink_sand"
+    },
+    "lit=true": {
+      "model": "shatteredarchive:block/shimmering_ink_sand_lit"
+    }
+  }
+}

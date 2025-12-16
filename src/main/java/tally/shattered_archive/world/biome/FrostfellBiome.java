@@ -21,8 +21,6 @@ public class FrostfellBiome {
 
 
 
-
-
     public static Biome create(Registerable<Biome> registerable) {
         return new Biome.Builder()
                 .generationSettings(createGenerationSettings(registerable))

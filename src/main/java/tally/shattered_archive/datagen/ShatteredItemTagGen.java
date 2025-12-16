@@ -29,6 +29,7 @@ public class ShatteredItemTagGen extends FabricTagProvider<Item> {
     public static final TagKey<Item> PEARLWOOD_LOGS  = of("pearlwood_logs");
     public static final TagKey<Item> ENCHANTED_WILLOW_LOGS  = of("enchanted_willow_logs");
     public static final TagKey<Item> ARCTICITE_GLASS  = of("arcticite_glass");
+    public static final TagKey<Item> GLASS_SILKED  = of("glass_silked");
 
     private static TagKey<Item> of(String id) {
         return TagKey.of(RegistryKeys.ITEM, Identifier.of(ShatteredArchive.MOD_ID, id));
@@ -40,6 +41,9 @@ public class ShatteredItemTagGen extends FabricTagProvider<Item> {
                 .add(ShatteredItems.GLASS_CUTTER);
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
                 .add(ShatteredItems.GLASS_CUTTER);
+        getOrCreateTagBuilder(ShatteredItemTagGen.GLASS_SILKED)
+                .add(ShatteredItems.GLASS_CUTTER)
+                .add(ShatteredItems.GLASS_CUTER);
 
         getOrCreateTagBuilder(ItemTags.FLOWERS)
                 .add(ShatteredBlocks.MANABLOOM.asItem())

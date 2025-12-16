@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:purple_dye_from_dwarf_lavender"
+        "recipe": "shatteredarchive:purple_dye_from_dwarf_lavender"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:purple_dye_from_dwarf_lavender"
+      "shatteredarchive:purple_dye_from_dwarf_lavender"
     ]
   }
 }
