@@ -66,8 +66,9 @@ public class ShatteredPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, ORE_ARCTICITE, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.ORE_ARCTICITE), modifiersWithCount(1,
-                HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(200)) ));
+        register(context, ORE_ARCTICITE, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.ORE_ARCTICITE),
+                modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128)) ));
 
         register(context, SHIMMERING_INK_SAND, configuredFeatures.getOrThrow(ShatteredConfiguredFeatures.SHIMMERING_INK_SAND),
                 modifiersWithRarityNonSquared(7,

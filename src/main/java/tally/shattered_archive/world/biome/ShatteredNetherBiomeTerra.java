@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 
 public class ShatteredNetherBiomeTerra extends Region {
     public ShatteredNetherBiomeTerra() {
-        super(Identifier.of(ShatteredArchive.MOD_ID, "nether"), RegionType.NETHER, 2);
+        super(Identifier.of(ShatteredArchive.MOD_ID, "nether"), RegionType.NETHER, 8);
     }
 
     @Override

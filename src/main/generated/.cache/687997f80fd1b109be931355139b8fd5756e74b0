@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-16T10:27:57.18021048	ShatteredArchive/Tags for minecraft:block
+// 1.21.1	2025-12-16T11:21:53.522139868	ShatteredArchive/Tags for minecraft:block
 ee2157bc137952c82d5511704abec1ecdf81e2a1 data/minecraft/tags/block/planks.json
 e38a4223d2e92c96d6ec60f59e4d48f2926fbde1 data/minecraft/tags/block/wooden_fences.json
 8997083075478e4e633fe1d63860c8283ea0bdc2 data/minecraft/tags/block/wooden_trapdoors.json
@@ -40,8 +40,8 @@ ecce643896d518f15614894b67b01107be45b289 data/minecraft/tags/block/mineable/axe.
 2ff3b987bdb7dd3f977cf1553b3efecee864cbf6 data/minecraft/tags/block/wooden_stairs.json
 731ff13a6d5ae77e868d040992f7aa28be1e8033 data/minecraft/tags/block/flower_pots.json
 04a55ab31ac4b5517a8ecb433244edd31b179371 data/minecraft/tags/block/incorrect_for_gold_tool.json
-04a55ab31ac4b5517a8ecb433244edd31b179371 data/minecraft/tags/block/incorrect_for_stone_tool.json
 04a55ab31ac4b5517a8ecb433244edd31b179371 data/minecraft/tags/block/incorrect_for_wooden_tool.json
+04a55ab31ac4b5517a8ecb433244edd31b179371 data/minecraft/tags/block/incorrect_for_stone_tool.json
 781480186408e00d388f227e8ee9f1d95ad48821 data/minecraft/tags/block/vibration_resonators.json
 b186b00086f755bd88931493a1c6a53d546719e1 data/minecraft/tags/block/walls.json
 91b3f44e534ec4b8ac665aaa2b2552c5f1dc9a94 data/minecraft/tags/block/camel_sand_step_sound_blocks.json

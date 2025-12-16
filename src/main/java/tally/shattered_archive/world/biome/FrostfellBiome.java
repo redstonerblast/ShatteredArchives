@@ -17,9 +17,7 @@ import net.minecraft.world.gen.feature.*;
 import tally.shattered_archive.world.ShatteredPlacedFeatures;
 
 public class FrostfellBiome {
-    public static final MultiNoiseUtil.NoiseHypercube NOISE_POINT = MultiNoiseUtil.createNoiseHypercube(-0.45F, -0.3F, 0.0F, 0.0F, 0.0F, 0.0F, 0.4F);
-
-
+    public static final MultiNoiseUtil.NoiseHypercube NOISE_POINT = MultiNoiseUtil.createNoiseHypercube(-0.18F, 0.02F, 0.0F, 0.0F, 0.0F, 0.00F, -0.02F);
 
 
 
