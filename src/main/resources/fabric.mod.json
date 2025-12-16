@@ -3,9 +3,11 @@
 	"id": "shatteredarchive",
 	"version": "${version}",
 	"name": "ShatteredArchive",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The description was erased by The Fade...",
 	"authors": [
-		"Me!"
+		"TallyIsManyThings",
+		"MagnarIUK",
+		"ItzCrim"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
