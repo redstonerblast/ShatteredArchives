@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.random.Random;
@@ -19,7 +20,7 @@ public class ShimerringInkSand extends Block {
 
 
     public static final MapCodec<ShimerringInkSand> CODEC = ShimerringInkSand.createCodec(ShimerringInkSand::new);
-    public static final BooleanProperty LIT = BooleanProperty.of("lit");
+    public static final BooleanProperty LIT = Properties.LIT;
 
     public MapCodec<ShimerringInkSand> getCodec() {return CODEC;}
 

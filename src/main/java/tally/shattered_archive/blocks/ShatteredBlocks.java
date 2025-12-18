@@ -514,7 +514,7 @@ public class ShatteredBlocks {
                             .strength(0.1F)
                             .requiresTool()
                             .sounds(BlockSoundGroup.SNOW)
-                            .blockVision((state, world, pos) -> (Integer)state.get(SnowBlock.LAYERS) >= 8)
+                            .blockVision((state, world, pos) -> state.get(SnowBlock.LAYERS) >= 8)
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
@@ -621,17 +621,11 @@ public class ShatteredBlocks {
 
     public static final Block SMOOTH_INK_SANDSTONE_STAIRS = register("smooth_ink_sandstone_stairs", createOldStairsBlock(SMOOTH_INK_SANDSTONE));
 
-    public static final Block SOARE_AURORA_BLOCK = register("soare_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> {
-        return 2;
-    }).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),3));
+    public static final Block SOARE_AURORA_BLOCK = register("soare_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> 2).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),3));
 
-    public static final Block LUNA_AURORA_BLOCK = register("luna_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> {
-        return 2;
-    }).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),2));
+    public static final Block LUNA_AURORA_BLOCK = register("luna_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> 2).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),2));
 
-    public static final Block SOL_AURORA_BLOCK = register("sol_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> {
-        return 2;
-    }).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),1));
+    public static final Block SOL_AURORA_BLOCK = register("sol_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> 2).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()),1));
 
     public static final Block SOL_AURORA_CLUSTER = register(
             "sol_aurora_cluster",
@@ -664,9 +658,7 @@ public class ShatteredBlocks {
             new AuroraClusterBlock(ShatteredSaplingGenerators.SOL_AURORA,3.0F, 4.0F, AbstractBlock.Settings.copyShallow(SOL_AURORA_BLOCK).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).luminance(state -> 2))
     );
 
-    public static final Block ECLIPSA_AURORA_BLOCK = register("eclipsa_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> {
-        return 2;
-    }).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()), 4));
+    public static final Block ECLIPSA_AURORA_BLOCK = register("eclipsa_aurora_block", new AuroraBlock((AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance((p_50886_) -> 2).nonOpaque().postProcess(ShatteredBlocks::always).emissiveLighting(ShatteredBlocks::always).ticksRandomly()), 4));
 
     public static final Block INKED_XANDRITE_BLOCK = register("inked_xandrite_block",
             new Block(AbstractBlock.Settings.copy(Blocks.AMETHYST_BLOCK).strength(1.5F)
@@ -680,7 +672,7 @@ public class ShatteredBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE).sounds(BlockSoundGroup.STONE).requiresTool().strength(3.0f, 3.0f)));
 
     public static final Block SHIMMERING_INK_SAND = register("shimmering_ink_sand",
-            new ShimerringInkSand(AbstractBlock.Settings.copy(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
+            new ShimerringInkSand(AbstractBlock.Settings.copy(Blocks.SAND).sounds(BlockSoundGroup.SAND).luminance(Blocks.createLightLevelFromLitBlockState(3)).emissiveLighting(Blocks::always)));
 
     private static boolean always(BlockState blockState, net.minecraft.world.BlockView blockView, BlockPos blockPos) {
         return true;
